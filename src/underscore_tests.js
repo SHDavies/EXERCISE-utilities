@@ -381,7 +381,7 @@ var _ = { };
   _.difference = function(array) {
     var argumentArr = Array.prototype.slice.call(arguments);
     var result = [];
-    array.map(function(item) {
+    argumentArr[0].map(function(item) {
       var different = true;
       for (var i = 1; i < argumentArr.length; i++) {
         for (var x = 0; x < argumentArr[i].length; x++) {
